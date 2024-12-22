@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookVisitFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Appointment_visit"
+            android:textSize="48sp" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Choose_service"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spServiceBookVisit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:focusable="true"
+            android:hint="@string/Choose_service"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Choose_employee"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spEmployeeBookVisit"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:focusable="true"
+            android:hint="@string/Choose_employee" />
+
+
+        <EditText
+            android:id="@+id/etSelectDateBookVisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/Choose_date"
+            android:inputType="date"
+            android:focusableInTouchMode="false"/>
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Choose_time"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spTimeBookVisit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="9dp"
+            android:hint="@string/Choose_time" />
+
+        <Button
+            android:id="@+id/btnBookVisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Book_visit_button" />
+
+    </LinearLayout>
+
+</FrameLayout>

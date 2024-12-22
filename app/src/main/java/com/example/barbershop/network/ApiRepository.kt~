@@ -1,0 +1,48 @@
+package com.example.barbershop.network
+
+
+import retrofit2.Response
+
+class ApiRepository(private val sessionManager: SessionManager) {
+    private val apiService: ApiService by lazy {
+        ApiClient.getRetrofitInstance(sessionManager).create(ApiService::class.java)
+    }
+
+    suspend fun getAvailableTime(
+        serviceId: Int,
+        employeeId: Int,
+        date: String
+    ): Response<List<String>> {
+        return apiService.getAvailableTime(serviceId, employeeId, date)
+    }
+
+    suspend fun getEmployeeForService(serviceId: Int) = apiService.getEmployeeForService(serviceId)
+
+    suspend fun login(username: String, password: String): Response<LoginResponse> {
+        // Создайте объект для отправки на сервер
+        val loginRequest = LoginRequest(username, password)
+        return apiService.login(loginRequest)
+    }
+
+    fun getEmployees() = apiService.getEmployees()
+
+    fun registerClient(client: Client) = apiService.registerClient(client)
+
+    fun updateClient(client: ClientUpdate) = apiService.updateClient(client)
+
+    fun getClient() = apiService.getClient()
+
+    fun bookVisit(visit_ip: VisitIP) = apiService.bookVisit(visit_ip)
+
+
+    fun getVisits() = apiService.getVisits()
+
+    fun updateVisit(visitId: Int, visit_ip: VisitIP) = apiService.updateVisit(visitId, visit_ip)
+
+    fun deleteVisit(visitId: Int) = apiService.deleteVisit(visitId)
+
+    fun getHalls() = apiService.getHalls()
+
+    fun getServices() = apiService.getServices()
+
+}

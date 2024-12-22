@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">BarberShop</string>
+    <string name="login">Введите логин</string>
+    <string name="password">Введите пароль</string>
+    <string name="enter_button">Войти</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="your_visits">Ваша история посещений:</string>
+    <string name="login_username">Логин</string>
+    <string name="email">Email</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="user_password">Пароль</string>
+    <string name="user_password2">Подтверждение пароля</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="date_of_birth">Дата рождения (ГГГГ-ММ-ДД)</string>
+    <string name="gender">Пол (м/ж)</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="Login_layout">Вход</string>
+    <string name="register_layout">Регистрация</string>
+    <string name="profile_client">Профиль пользователя</string>
+    <string name="save_update_client_profile">Сохранить изменения</string>
+    <string name="update_profile_client">Редактировать профиль</string>
+    <string name="editing_profile">Редактирование профиля</string>
+    <string name="Save_button">Сохранить</string>
+    <string name="name_hall">Название зала</string>
+    <string name="description_hall">Описание зала</string>
+    <string name="capacity">Вместимость</string>
+    <string name="location">Расположение</string>
+    <string name="time_work">Часы работы</string>
+    <string name="name_service">Название услуги</string>
+    <string name="description_service">Описание услуги</string>
+    <string name="price_service">Цена</string>
+    <string name="duration_service">Длительность</string>
+    <string name="name_employee">Имя сотрудника</string>
+    <string name="position_employee">Должность</string>
+    <string name="halls_name_employee">Залы</string>
+    <string name="service_name_employee">Услуги</string>
+    <string name="Book_visit_button">Записаться</string>
+    <string name="Choose_service">Выберите услугу</string>
+    <string name="Choose_employee">Выберите мастера</string>
+    <string name="Appointment_visit">Запись на посещение</string>
+    <string name="Choose_time">Выберете время</string>
+    <string name="Editing_profile">Редактирование профиля</string>
+    <string name="name_employee_visit_show">Имя Фамилия мастера</string>
+    <string name="name_service_visit_show">Услуга</string>
+    <string name="date_visit_show">Дата и время</string>
+    <string name="time_visit_show">Время</string>
+    <string name="status_visit">Статус</string>
+    <string name="no_visit_show">Нет запланированных визитов</string>
+    <string name="book_visit_show_button">Записаться</string>
+    <string name="history_visit_show">История посещений</string>
+    <string name="Edit_visit_button">Редактировать</string>
+    <string name="Delete_visit_button">Удалить</string>
+    <string name="name_employee_update_visit">Мастер</string>
+    <string name="input_date_update_visit">Введите дату</string>
+    <string name="input_time_update_visit">Введите время</string>
+    <string name="update_visit">Редактирование посещения</string>
+    <string name="Empoyees">Мастера</string>
+    <string name="Halls">Залы</string>
+    <string name="Profile">Профиль</string>
+    <string name="Services">Услуги</string>
+    <string name="Visits">Посещения</string>
+    <string name="Choose_date">Выбрать дату</string>
+    <string name="logout">Выйти</string>
+
+
+    <string-array name="gender_array">
+        <item>Мужской</item>
+        <item>Женский</item>
+    </string-array>
+
+
+</resources>
+

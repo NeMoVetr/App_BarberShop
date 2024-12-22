@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BarberShop"
+        tools:targetApi="31">
+
+        <!-- Основная активность с LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BarberShop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Все остальные активности без фильтра LAUNCHER -->
+        <activity android:name=".UpdateVisitActivity" android:exported="true" />
+        <activity android:name=".VisitShowActivity" android:exported="true" />
+        <activity android:name=".BookVisitActivity" android:exported="true" />
+        <activity android:name=".EmployeeShowActivity" android:exported="true" />
+        <activity android:name=".ServiceActivity" android:exported="true" />
+        <activity android:name=".HallShowActivity" android:exported="true" />
+        <activity android:name=".UpdateClientActivity" android:exported="true" />
+        <activity android:name=".ProfileClientActivity" android:exported="true" />
+        <activity android:name=".RegisterActivity" android:exported="true" />
+
+    </application>
+
+</manifest>

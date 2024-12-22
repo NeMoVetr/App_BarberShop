@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Тема приложения, наследуемая от Theme.AppCompat -->
+    <style name="Theme.BarberShop" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+</resources>
